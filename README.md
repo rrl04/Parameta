@@ -6,6 +6,12 @@ This repository contains two independent Python pipelines:
 
 bash
 
+default:
+
+python rates.py
+
+with args:
+
 python rates.py \
     --ccy rates_ccy_data.csv \
     --spot rates_spot_rate_data.parq.gzip \
@@ -29,6 +35,12 @@ Arguments:
 2. **stdev.py** – computes 20-period rolling standard deviations of bid/mid/ask prices, but only when the last 20 rows are **hourly contiguous** (no missing hours).
 
 bash
+
+default:
+
+python stdev.py
+
+with args:
 
 python stdev.py \
     --input stdev_price_data.parq.gzip \
