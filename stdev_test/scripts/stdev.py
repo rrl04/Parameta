@@ -111,8 +111,8 @@ if __name__ == '__main__':
 
     processor = StdDevProcessor()
     processor.process(
-        input_file=args.input_file,
-        output_file=args.output_file,
+        input_file=args.input,
+        output_file=args.output,
         start=args.start,
         end=args.end,
         add_gap_flag=args.add_gap_flag
